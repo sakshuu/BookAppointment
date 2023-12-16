@@ -1,0 +1,85 @@
+.main-card{
+    margin: auto !important;
+    max-width: 94% !important;
+    padding-bottom: 4% !important;
+    margin-top: 4px !important;
+    
+}
+
+@media (max-width:900px) {
+    .main-card{
+        margin:25px !important;
+        max-width: 99% !important;
+        padding: 10px !important;
+    }
+    .choose-date{
+        padding: 0px !important;
+    }
+}
+.heading {
+    margin-left: 8% !important;
+    
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.search-container {
+    position: relative;
+    width: fit-content; 
+  }
+  
+  .bi-search {
+    position: absolute; 
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  .search-inp {
+    padding:4px !important;
+    padding-left: 40px !important;
+    max-width: 270px !important; 
+  }
+  
+.btn-main{
+    border: 1px solid black;
+    font-size: small;
+}
+.icons-card{
+    text-align: start !important;
+}
+
+.lines{
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+}
+
+.icon-circle{
+    padding: 6px !important;
+    border-radius: 50% !important;
+    background-color: rgb(188, 188, 245);
+    color: blue;
+    font-size: smaller;
+}
+.center-content{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+.main-patient{
+margin-top: 20% !important;
+}
+.photo{
+    width: 50px !important;
+    margin: auto !important;
+    padding: auto !important;
+}
+
+.choose-date{
+padding-left: 50px !important;
+}

@@ -1,0 +1,38 @@
+.sidebar{
+  width: 18vw !important; 
+  height: 100vh;
+  background-color:rgb(226, 236, 244) !important;
+  color: black !important;
+}
+
+.font-icon{
+  font-size: medium !important;
+  font-weight: 800 !important;
+}
+
+.nav-link:hover{
+background-color: aliceblue;
+color: blue !important;
+
+}
+.main-nav{
+margin-top: 120% !important;
+}
+
+@media (max-width:400px) {
+  .main-nav{
+    margin-top: 345px !important;
+  }
+}
+.bi-box-arrow-right{
+  color: brown !important;
+}
+.nav-link{
+  padding: 6px !important;
+  padding-right: 40px !important;
+}
+
+
+.main-span{
+  margin-left: -4px !important;
+}
