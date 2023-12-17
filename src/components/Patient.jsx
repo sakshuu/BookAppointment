@@ -1,60 +1,51 @@
 import React from 'react'
-import { avatar } from '../assets/img'
 import "./../assets/css/cards.css"
 
-const Patient = () => {
+const Patient = ({selectedPatient}) => {
 
   
-  const patientData = [
-    { id: 1, name: "Anir", condition: "Brain" },
-    { id: 2, name: "test", condition: "Heart" },
-    { id: 3, name: "jay", condition: "Lungs" },
-    { id: 4, name: "lara", condition: "Kidney" },
-    { id: 5, name: "zoya", condition: "Eyes" },
-    { id: 6, name: "Alpha", condition: "Skin" },
-    { id: 7, name: "Olivia", condition: "Liver" },
-    { id: 8, name: "Karan", condition: "Stomach" },
-    { id: 9, name: "bela", condition: "Bones" },
-    { id: 10, name: "aayesha", condition: "Muscles" },
-    // Add more patient data as needed
-  ];
-  
+
  
   return <>
-  <div className="main-patient  small">
+
+{
+  selectedPatient && (
+<div className="main-patient  small">
 
 <div>
-
   <div className='photo'>
-  <img src={avatar} width={65}  alt="" />
+  <img src={selectedPatient.img} width={65}  alt="" />
   </div>
-  <h6 className='text-center mt-1'>Patient Name</h6>
+  <h6 className='text-center mt-1'>{selectedPatient.name}</h6>
 
 
 
 <div className='d-flex justify-content-center gap-4 mt-2 '>
   <div>
-    <span className='bold'>Mr No:  </span><span>12345</span>
+    <span className='bold'>Mr No:  </span><span>{selectedPatient.mrno}</span>
 </div>
-  <div><span className='bold'>Mr No:  </span><span>12345</span>
+  <div><span className='bold'>Mr No:  </span><span>{selectedPatient.op}</span>
 </div>
 </div>
-<div className='mt-2'><span className='bold'>Gender : </span><span>Male</span>
+<div className='mt-2'><span className='bold'>Gender : </span><span>{selectedPatient.gender}</span>
 </div>
-<div><span className='bold'>Gender : </span><span>Male</span>
+<div><span className='bold'>Age : </span><span>{selectedPatient.age}</span>
 </div>
-<div><span className='bold'>Gend : </span><span>Lorem, ipsum dolor.</span>
+<div><span className='bold'>Guardian : </span><span>{selectedPatient.guardian}</span>
 </div>
-<div><span className='bold'>Genderbh : </span><span>7858675768/</span>
+<div><span className='bold'>Phone : </span><span>{selectedPatient.phone}</span>
 </div>
 
 
 <p className='mt-3 bold '>Last Consultation</p>
-<p>!6:00 - 16:10 PM,22,Dec,2022</p>
-<p className='mt-3 bold'>Last Consultation</p>
-<p>!6:00 - 16:10 PM,22,Dec,2022</p>
+<p>{selectedPatient.lastConsultan}</p>
+<p className='mt-3 bold'>Consultant</p>
+<p>{selectedPatient.consultan}</p>
 </div>
   </div>
+  )
+}
+  
   </>
 }
 
