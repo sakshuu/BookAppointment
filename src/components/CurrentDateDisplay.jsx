@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { DatePicker } from 'ch_react-horizontal-datepicker';
 
-const CurrentDateDisplay = forwardRef((props, ref) => {
+const CurrentDateDisplay = ({props, ref}) => {
   const today = new Date();
   const currentDay = today.getDay();
   const startDate = new Date(today);
@@ -44,7 +44,7 @@ const CurrentDateDisplay = forwardRef((props, ref) => {
       ]}
     />
   );
-});
+};
 
 export default CurrentDateDisplay;
 
