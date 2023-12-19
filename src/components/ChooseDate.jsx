@@ -98,7 +98,7 @@ const ChooseDate = ({selectedPatient, selectedDoctor }) => {
             <div className="modal-body p-2">
               <p>Patient Name: {selectedPatient?.name}</p>
               <p>Doctor: {selectedDoctor?.name}</p>
-              <p>Date: 18 dec 2023 {selectedDate}</p>
+              <p>Date: 19 dec 2023 {selectedDate}</p>
               <p>Time: {selectedTime}</p>
             </div>
             <div className="modal-footer d-flex gap-2">
